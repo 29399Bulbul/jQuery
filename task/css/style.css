@@ -1,0 +1,147 @@
+.root {
+	width: 100%;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	padding: 0 6%;
+
+	background-color: #fff;
+}
+
+.root > .logo-wrap .logo {
+	margin-top: 20px;
+}
+
+.root > .sign-up-form-wrap {
+	width: max-content;
+
+	display: flex;
+	gap: 10px;
+
+	padding-left: 6%;
+	margin-bottom: 20px;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form {
+	flex-basis: 40%;
+
+	padding: 10px 16px;
+
+	border: 0.5px solid #878787;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .title {
+	font-weight: 300;
+	font-size: 1.54rem;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .sign-up {
+	font-weight: 500;
+	font-size: 1.97rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .sign-up span {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .input-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	position: relative;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .input-wrap label {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .input-wrap input {
+	padding: 14px 18px;
+	padding-right: calc(18px + 20px + 5px);
+
+	outline: none;
+	border: 0.5px solid #282828;
+	border-radius: 6px;
+
+	font-weight: 300;
+	font-size: 0.9rem;
+	color: #ababab;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .input-wrap .hide-icon {
+	position: absolute;
+	bottom: 14px;
+	right: 20px;
+
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .submit {
+	padding: 14px 18px;
+
+	outline: none;
+	border: 0.5px solid #282828;
+	border-radius: 6px;
+	background-color: #000;
+
+	font-weight: 500;
+	font-size: 1rem;
+	color: #fff;
+	
+	cursor: pointer;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .to-login {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1rem;
+	color: #7d7d7d;
+}
+
+.root > .sign-up-form-wrap > .sign-up-form > .to-login a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #000;
+}
+
+.root > .sign-up-form-wrap > .image {
+	flex-basis: 60%;
+	width: 60%;
+
+	object-fit: cover;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+	.root > .sign-up-form-wrap {
+		width: 100%;
+		padding: 0;
+	}
+
+	.root > .sign-up-form-wrap > .image {
+		display: none;
+	}
+
+	.root > .sign-up-form-wrap > .sign-up-form {
+		flex-basis: 100%;
+	}
+}

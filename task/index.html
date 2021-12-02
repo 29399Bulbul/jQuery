@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Sign up</title>
+
+		<!-- Css file -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- jQuery -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="root">
+			<div class="logo-wrap">
+				<h1 class="logo">Your Logo</h1>
+			</div>
+
+			<div class="sign-up-form-wrap">
+				<form class="sign-up-form">
+					<h2 class="title">Welcome !</h2>
+					<h1 class="sign-up">
+						Sign up to
+						<span>Lorem Ipsum is simply</span>
+					</h1>
+
+					<div class="input-wrap">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="Enter your email" />
+					</div>
+					<div class="input-wrap">
+						<label for="username">User name</label>
+						<input
+							type="text"
+							id="username"
+							placeholder="Enter your user name"
+						/>
+					</div>
+					<div class="input-wrap">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Enter your password"
+						/>
+						<img src="./image/hide.svg" alt="hide icon" class="hide-icon" />
+					</div>
+					<div class="input-wrap">
+						<label for="rePassword">Confrim Password</label>
+						<input
+							type="password"
+							id="rePassword"
+							placeholder="Confrim your Password"
+						/>
+						<img src="./image/hide.svg" alt="hide icon" class="hide-icon" />
+					</div>
+					<input type="submit" class="submit" value="Register" />
+					<p class="to-login">
+						Already have an Account ?
+						<a href="javascript:;">Login</a>
+					</p>
+				</form>
+
+				<img src="./image/talk-image.png" alt="talking" class="image" />
+			</div>
+		</div>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>
